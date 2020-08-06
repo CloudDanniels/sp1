@@ -1,5 +1,7 @@
 package cn.qphone.spring;
 
+import cn.qphone.spring.di.dao.UserDao;
+import cn.qphone.spring.ioc.User;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -18,7 +20,5 @@ public class Demo1_IOC {
         p4.showinfo();
         Person p3 = (Person) applicationContext.getBean("c3");
         p3.showinfo();
-
-
     }
 }
